@@ -19,6 +19,7 @@ class Post(models.Model):
     kubok = models.IntegerField(default=1)
     lop = models.IntegerField(default=1)
     mening = models.IntegerField(default=1)
+    rasmcha = models.CharField(max_length=255)
 
     def __str__(self) -> str:
         return self.name
