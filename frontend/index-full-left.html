@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 
 <!--
@@ -23,15 +24,15 @@
    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:600%7cOpen&#43;Sans&amp;display=swap" media="screen">
 
-   <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
-   <link rel="stylesheet" href="plugins/slick/slick.css">
+   <link rel="stylesheet" href="{% static 'plugins/themify-icons/themify-icons.css' %}">
+   <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
 
    <!-- Main Stylesheet -->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
    <!--Favicon-->
-   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-   <link rel="icon" href="images/favicon.png" type="image/x-icon">
+   <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+   <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
 </head>
 
 <body>
@@ -40,8 +41,8 @@
    <div class="container">
 
       <nav class="navbar navbar-expand-lg navbar-white">
-         <a class="navbar-brand" href="index.html">
-            <img class="img-fluid" width="150px" src="images/logo.png" alt="LogBook">
+         <a class="navbar-brand" href="index/">
+            <img class="img-fluid" width="150px" src="{% static 'images/logo.png' %}" alt="LogBook">
          </a>
          <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
             <i class="ti-menu"></i>
@@ -55,31 +56,31 @@
                      homepage <i class="ti-angle-down ml-1"></i>
                   </a>
                   <div class="dropdown-menu">
-                     <a class="dropdown-item" href="index-full.html">Homepage Full Width</a>
-                     <a class="dropdown-item" href="index-full-left.html">Homepage Full With Left Sidebar</a>
-                     <a class="dropdown-item" href="index-full-right.html">Homepage Full With Right Sidebar</a>
-                     <a class="dropdown-item" href="index-list.html">Homepage List Style</a>
-                     <a class="dropdown-item" href="index-list-left.html">Homepage List With Left Sidebar</a>
-                     <a class="dropdown-item" href="index-list-right.html">Homepage List With Right Sidebar</a>
+                     <a class="dropdown-item" href="index-full/">Homepage Full Width</a>
+                     <a class="dropdown-item" href="index-full-left/">Homepage Full With Left Sidebar</a>
+                     <a class="dropdown-item" href="index-full-right/">Homepage Full With Right Sidebar</a>
+                     <a class="dropdown-item" href="index-list/">Homepage List Style</a>
+                     <a class="dropdown-item" href="index-list-left/">Homepage List With Left Sidebar</a>
+                     <a class="dropdown-item" href="index-list-right/">Homepage List With Right Sidebar</a>
                   </div>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
+                  <a class="nav-link" href="about/">About</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                  <a class="nav-link" href="contact/">Contact</a>
                </li>
                <li class="nav-item dropdown">
                   <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
                      aria-expanded="false">Pages <i class="ti-angle-down ml-1"></i>
                   </a>
                   <div class="dropdown-menu">
-                     <a class="dropdown-item" href="author.html">Author</a>
-                     <a class="dropdown-item" href="post-details-1.html">Post Details 1</a>
-                     <a class="dropdown-item" href="post-details-2.html">Post Details 2</a>
-                     <a class="dropdown-item" href="post-elements.html">Post Elements</a>
-                     <a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a>
-                     <a class="dropdown-item" href="terms-conditions.html">Terms Conditions</a>
+                     <a class="dropdown-item" href="author/">Author</a>
+                     <a class="dropdown-item" href="post-details-1/">Post Details 1</a>
+                     <a class="dropdown-item" href="post-details-2/">Post Details 2</a>
+                     <a class="dropdown-item" href="post-elements/">Post Elements</a>
+                     <a class="dropdown-item" href="privacy-policy/">Privacy Policy</a>
+                     <a class="dropdown-item" href="terms-conditions/">Terms Conditions</a>
                   </div>
                </li>
             </ul>
@@ -167,10 +168,10 @@
       <ul class="list-unstyled widget-list">
          <li class="media widget-post align-items-center">
             <a href="post-elements.html">
-               <img loading="lazy" class="mr-3" src="images/post/post-6.jpg">
+               <img loading="lazy" class="mr-3" src="{% static 'images/post/post-6.jpg' %}">
             </a>
             <div class="media-body">
-               <h5 class="h6 mb-0"><a href="post-elements.html">Elements That You Can Use To Create A New Post On
+               <h5 class="h6 mb-0"><a href="post-elements/">Elements That You Can Use To Create A New Post On
                      This Template.</a></h5>
                <small>March 15, 2020</small>
             </div>
@@ -179,10 +180,10 @@
       <ul class="list-unstyled widget-list">
          <li class="media widget-post align-items-center">
             <a href="post-details-1.html">
-               <img loading="lazy" class="mr-3" src="images/post/post-1.jpg">
+               <img loading="lazy" class="mr-3" src="{% static 'images/post/post-1.jpg' %}">
             </a>
             <div class="media-body">
-               <h5 class="h6 mb-0"><a href="post-details-1.html">Cheerful Loving Couple Bakers Drinking Coffee</a>
+               <h5 class="h6 mb-0"><a href="post-details-1/">Cheerful Loving Couple Bakers Drinking Coffee</a>
                </h5>
                <small>March 14, 2020</small>
             </div>
@@ -190,11 +191,11 @@
       </ul>
       <ul class="list-unstyled widget-list">
          <li class="media widget-post align-items-center">
-            <a href="post-details-2.html">
-               <img loading="lazy" class="mr-3" src="images/post/post-2.jpg">
+            <a href="post-details-2./">
+               <img loading="lazy" class="mr-3" src="{% static 'images/post/post-2.jpg' %}">
             </a>
             <div class="media-body">
-               <h5 class="h6 mb-0"><a href="post-details-2.html">Cheerful Loving Couple Bakers Drinking Coffee</a>
+               <h5 class="h6 mb-0"><a href="post-details-2">Cheerful Loving Couple Bakers Drinking Coffee</a>
                </h5>
                <small>March 14, 2020</small>
             </div>
@@ -206,13 +207,13 @@
 				<article class="row mb-5">
 					<div class="col-12">
 						<div class="post-slider">
-							<img loading="lazy" src="images/post/post-6.jpg" class="img-fluid" alt="post-thumb">
-							<img loading="lazy" src="images/post/post-1.jpg" class="img-fluid" alt="post-thumb">
-							<img loading="lazy" src="images/post/post-3.jpg" class="img-fluid" alt="post-thumb">
+							<img loading="lazy" src="{% static 'images/post/post-6.jpg' %}" class="img-fluid" alt="post-thumb">
+							<img loading="lazy" src="{% static 'images/post/post-1.jpg' %}" class="img-fluid" alt="post-thumb">
+							<img loading="lazy" src="{% static 'images/post/post-3.jpg' %}" class="img-fluid" alt="post-thumb">
 						</div>
 					</div>
 					<div class="col-12 mx-auto">
-						<h3><a class="post-title" href="post-elements.html">Elements
+						<h3><a class="post-title" href="post-elements/">Elements
                         That You Can Use To Create A New Post On This Template.</a></h3>
 						<ul class="list-inline post-meta mb-4">
 							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
@@ -230,11 +231,11 @@
 				<article class="row mb-5">
 					<div class="col-12">
 						<div class="post-slider">
-							<img loading="lazy" src="images/post/post-1.jpg" class="img-fluid" alt="post-thumb">
+							<img loading="lazy" src="{% static 'images/post/post-1.jpg' %}" class="img-fluid" alt="post-thumb">
 						</div>
 					</div>
 					<div class="col-12 mx-auto">
-						<h3><a class="post-title" href="post-details-1.html">Cheerful
+						<h3><a class="post-title" href="post-details-1">Cheerful
                         Loving Couple Bakers Drinking Coffee</a></h3>
 						<ul class="list-inline post-meta mb-4">
 							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
@@ -252,12 +253,12 @@
 				<article class="row mb-5">
 					<div class="col-12">
 						<div class="post-slider">
-							<img loading="lazy" src="images/post/post-2.jpg" class="img-fluid" alt="post-thumb">
-							<img loading="lazy" src="images/post/post-4.jpg" class="img-fluid" alt="post-thumb">
+							<img loading="lazy" src="{% static 'images/post/post-2.jpg' %}" class="img-fluid" alt="post-thumb">
+							<img loading="lazy" src="{% static 'images/post/post-4.jpg' %}" class="img-fluid" alt="post-thumb">
 						</div>
 					</div>
 					<div class="col-12 mx-auto">
-						<h3><a class="post-title" href="post-details-2.html">Cheerful
+						<h3><a class="post-title" href="post-details-2">Cheerful
                         Loving Couple Bakers Drinking Coffee</a></h3>
 						<ul class="list-inline post-meta mb-4">
 							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
@@ -275,11 +276,11 @@
 				<article class="row mb-5">
 					<div class="col-12">
 						<div class="post-slider">
-							<img loading="lazy" src="images/post/post-3.jpg" class="img-fluid" alt="post-thumb">
+							<img loading="lazy" src="{% static 'images/post/post-3.jpg' %}" class="img-fluid" alt="post-thumb">
 						</div>
 					</div>
 					<div class="col-12 mx-auto">
-						<h3><a class="post-title" href="post-details-2.html">Cheerful
+						<h3><a class="post-title" href="post-details-2">Cheerful
                         Loving Couple Bakers Drinking Coffee</a></h3>
 						<ul class="list-inline post-meta mb-4">
 							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
@@ -297,12 +298,12 @@
 				<article class="row mb-5">
 					<div class="col-12">
 						<div class="post-slider">
-							<img loading="lazy" src="images/post/post-4.jpg" class="img-fluid" alt="post-thumb">
-							<img loading="lazy" src="images/post/post-1.jpg" class="img-fluid" alt="post-thumb">
+							<img loading="lazy" src="{% static 'images/post/post-4.jpg' %}" class="img-fluid" alt="post-thumb">
+							<img loading="lazy" src="{% static 'images/post/post-1.jpg' %}" class="img-fluid" alt="post-thumb">
 						</div>
 					</div>
 					<div class="col-12 mx-auto">
-						<h3><a class="post-title" href="post-details-1.html">Cheerful
+						<h3><a class="post-title" href="post-details-1/">Cheerful
                         Loving Couple Bakers Drinking Coffee</a></h3>
 						<ul class="list-inline post-meta mb-4">
 							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
@@ -320,11 +321,11 @@
 				<article class="row mb-5">
 					<div class="col-12">
 						<div class="post-slider">
-							<img loading="lazy" src="images/post/post-5.jpg" class="img-fluid" alt="post-thumb">
+							<img loading="lazy" src="{% static 'images/post/post-5.jpg' %}" class="img-fluid" alt="post-thumb">
 						</div>
 					</div>
 					<div class="col-12 mx-auto">
-						<h3><a class="post-title" href="post-details-1.html">Cheerful
+						<h3><a class="post-title" href="post-details-1">Cheerful
                         Loving Couple Bakers Drinking Coffee</a></h3>
 						<ul class="list-inline post-meta mb-4">
 							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
@@ -363,8 +364,8 @@
       <div class="container">
          <div class="row justify-content-between">
             <div class="col-md-3 mb-4">
-               <a class="mb-4 d-block" href="index.html">
-                  <img class="img-fluid" width="150px" src="images/logo.png" alt="LogBook">
+               <a class="mb-4 d-block" href="index/">
+                  <img class="img-fluid" width="150px" src="{% static 'images/logo.png' %}" alt="LogBook">
                </a>
                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
             </div>
@@ -372,10 +373,10 @@
             <div class="col-lg-2 col-md-3 col-6 mb-4">
                <h6 class="mb-4">Quick Links</h6>
                <ul class="list-unstyled footer-list">
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                  <li><a href="terms-conditions.html">Terms Conditions</a></li>
+                  <li><a href="about/">About</a></li>
+                  <li><a href="contact/">Contact</a></li>
+                  <li><a href="privacy-policy/">Privacy Policy</a></li>
+                  <li><a href="terms-conditions/">Terms Conditions</a></li>
                </ul>
             </div>
 
@@ -411,11 +412,11 @@
 
 
    <!-- JS Plugins -->
-   <script src="plugins/jQuery/jquery.min.js"></script>
-   <script src="plugins/bootstrap/bootstrap.min.js" async></script>
-   <script src="plugins/slick/slick.min.js"></script>
+   <script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script>
+   <script src="{% static 'plugins/bootstrap/bootstrap.min.js'%}" async></script>
+   <script src="{% static 'plugins/slick/slick.min.js' %}"></script>
 
    <!-- Main Script -->
-   <script src="js/script.js"></script>
+   <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>

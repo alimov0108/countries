@@ -24,7 +24,7 @@
 
    <!-- plugins -->
    <link rel="preload" href="{% static 'https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWJ0bbck.woff2' %}" style="font-display: optional;">
-   <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}">
+   <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css">
    <link rel="stylesheet" href="{% static 'https://fonts.googleapis.com/css?family=Montserrat:600%7cOpen&#43;Sans&amp;display=swap' %}" media="screen">
 
    <link rel="stylesheet" href="{% static 'plugins/themify-icons/themify-icons.css' %}">
@@ -34,8 +34,8 @@
    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
    <!--Favicon-->
-   <link rel="shortcut icon" href="{{ post.rasmcha }}" type="image/x-icon">
-   <link rel="icon" href="{{ post.rasmcha }}" type="image/x-icon">
+   <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+   <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
 </head>
 
 <body>
@@ -44,8 +44,8 @@
    <div class="container">
 
       <nav class="navbar navbar-expand-lg navbar-white">
-         <a class="navbar-brand" href="{% static 'index.html' %}">
-            <img class="img-fluid" width="150px" src="{{ post.rasmcha }}" alt="LogBook">
+         <a class="navbar-brand" href="index/">
+            <img class="img-fluid" width="150px" src="{% static 'images/logo.png' %}" alt="LogBook">
          </a>
          <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
             <i class="ti-menu"></i>
@@ -117,38 +117,36 @@
 				<article class="row mb-5">
 					<div class="col-12">
 						<div class="post-slider">
-							<img loading="lazy" src="{{ post.rasmcha }}" class="img-fluid" alt="post-thumb">
-							<img loading="lazy" src="{{ post.rasmcha }}" class="img-fluid" alt="post-thumb">
-							<img loading="lazy" src="{{ post.rasmcha }}" class="img-fluid" alt="post-thumb">
+							<img loading="lazy" src="{% static 'images/post/post-6.jpg' %}" class="img-fluid" alt="post-thumb">
+							<img loading="lazy" src="{% static 'images/post/post-1.jpg' %}" class="img-fluid" alt="post-thumb">
+							<img loading="lazy" src="{% static 'images/post/post-3.jpg' %}" class="img-fluid" alt="post-thumb">
 						</div>
 					</div>
-               {% for post in posts %}
 					<div class="col-12 mx-auto">
-						<h3><a class="post-title" href="post-elements.html">{{ post.name }}</a></h3>
+						<h3><a class="post-title" href="post-elements/">Elements That You Can Use To Create A New Post On This Template.</a></h3>
 						<ul class="list-inline post-meta mb-4">
 							<li class="list-inline-item"><i class="ti-user mr-2"></i>
-								<a href="author.html">{{ post.yaratgan }}</a>
+								<a href="author/">John Doe</a>
 							</li>
-							<li class="list-inline-item">{{ post.date }}</li>
-							<li class="list-inline-item">{{ post.toifalar }}<a href="#!" class="ml-1">{{ post.fotografiya }}</a>
+							<li class="list-inline-item">Date : March 15, 2020</li>
+							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Photography </a>
 							</li>
-							<li class="list-inline-item">{{ post.tegs }}<a href="#!" class="ml-1">{{ post.photo }}</a> ,<a href="#!" class="ml-1">{{ post.image }}</a>
+							<li class="list-inline-item">Tags : <a href="#!" class="ml-1">Photo </a> ,<a href="#!" class="ml-1">Image </a>
 							</li>
 						</ul>
-						<p>{{ post.content }}</p> <a href="post-elements.html" class="btn btn-outline-primary">Continue Reading</a>
+						<p>Heading example Here is example of hedings. You can use this heading by following markdownify rules. For example: use # for heading 1 and use ###### for heading 6. Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</p> <a href="post-elements.html" class="btn btn-outline-primary">Continue Reading</a>
 					</div>
-               {% endfor %}
 				</article>
 				<article class="row mb-5">
 					<div class="col-12">
 						<div class="post-slider">
-							<img loading="lazy" src="{{ post.rasmcha }}" class="img-fluid" alt="post-thumb">
+							<img loading="lazy" src="{% static 'images/post/post-1.jpg' %}" class="img-fluid" alt="post-thumb">
 						</div>
 					</div>
 					<div class="col-12 mx-auto">
-						<h3><a class="post-title" href="post-details-1.html">Cheerful Loving Couple Bakers Drinking Coffee</a></h3>
+						<h3><a class="post-title" href="post-details-1/">Cheerful Loving Couple Bakers Drinking Coffee</a></h3>
 						<ul class="list-inline post-meta mb-4">
-							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
+							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author/">John Doe</a>
 							</li>
 							<li class="list-inline-item">Date : March 14, 2020</li>
 							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Photography </a>
@@ -162,14 +160,14 @@
 				<article class="row mb-5">
 					<div class="col-12">
 						<div class="post-slider">
-							<img loading="lazy" src="{{ post.rasmcha }}" class="img-fluid" alt="post-thumb">
-							<img loading="lazy" src="{{ post.rasmcha }}" class="img-fluid" alt="post-thumb">
+							<img loading="lazy" src="{% static 'images/post/post-2.jpg' %}" class="img-fluid" alt="post-thumb">
+							<img loading="lazy" src="{% static 'images/post/post-4.jpg' %}" class="img-fluid" alt="post-thumb">
 						</div>
 					</div>
 					<div class="col-12 mx-auto">
-						<h3><a class="post-title" href="post-details-2.html">Cheerful Loving Couple Bakers Drinking Coffee</a></h3>
+						<h3><a class="post-title" href="post-details-2/>Cheerful Loving Couple Bakers Drinking Coffee</a></h3>
 						<ul class="list-inline post-meta mb-4">
-							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
+							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author">John Doe</a>
 							</li>
 							<li class="list-inline-item">Date : March 14, 2020</li>
 							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Photobooth </a>
@@ -183,13 +181,13 @@
 				<article class="row mb-5">
 					<div class="col-12">
 						<div class="post-slider">
-							<img loading="lazy" src="{{ post.rasmcha }" class="img-fluid" alt="post-thumb">
+							<img loading="lazy" src="{% static 'images/post/post-3.jpg' %}" class="img-fluid" alt="post-thumb">
 						</div>
 					</div>
 					<div class="col-12 mx-auto">
-						<h3><a class="post-title" href="post-details-2.html">Cheerful Loving Couple Bakers Drinking Coffee</a></h3>
+						<h3><a class="post-title" href="{% static 'post-details-2.html' %}">Cheerful Loving Couple Bakers Drinking Coffee</a></h3>
 						<ul class="list-inline post-meta mb-4">
-							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
+							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author/">John Doe</a>
 							</li>
 							<li class="list-inline-item">Date : March 14, 2020</li>
 							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Videography </a>
@@ -203,14 +201,14 @@
 				<article class="row mb-5">
 					<div class="col-12">
 						<div class="post-slider">
-							<img loading="lazy" src="{{ post.rasmcha }}" class="img-fluid" alt="post-thumb">
-							<img loading="lazy" src="{{ post.rasmcha }}" class="img-fluid" alt="post-thumb">
+							<img loading="lazy" src="{% static 'images/post/post-4.jpg' %}" class="img-fluid" alt="post-thumb">
+							<img loading="lazy" src="{% static 'images/post/post-1.jpg' %}" class="img-fluid" alt="post-thumb">
 						</div>
 					</div>
 					<div class="col-12 mx-auto">
-						<h3><a class="post-title" href="post-details-1.html">Cheerful Loving Couple Bakers Drinking Coffee</a></h3>
+						<h3><a class="post-title" href="post-details-1/">Cheerful Loving Couple Bakers Drinking Coffee</a></h3>
 						<ul class="list-inline post-meta mb-4">
-							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
+							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author/">John Doe</a>
 							</li>
 							<li class="list-inline-item">Date : March 14, 2020</li>
 							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Four seasone </a>
@@ -225,13 +223,13 @@
 				<article class="row mb-5">
 					<div class="col-12">
 						<div class="post-slider">
-							<img loading="lazy" src="{{ post.rasmcha }}" class="img-fluid" alt="post-thumb">
+							<img loading="lazy" src="{% static 'images/post/post-5.jpg' %}" class="img-fluid" alt="post-thumb">
 						</div>
 					</div>
 					<div class="col-12 mx-auto">
-						<h3><a class="post-title" href="post-details-1.html">Cheerful Loving Couple Bakers Drinking Coffee</a></h3>
+						<h3><a class="post-title" href="post-details-1/">Cheerful Loving Couple Bakers Drinking Coffee</a></h3>
 						<ul class="list-inline post-meta mb-4">
-							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
+							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author/">John Doe</a>
 							</li>
 							<li class="list-inline-item">Date : March 14, 2020</li>
 							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Newyork city </a>
@@ -244,9 +242,9 @@
 				</article>
 				<article class="row mb-5">
 					<div class="col-12 mx-auto">
-						<h3><a class="post-title" href="post-details-2.html">Cheerful Loving Couple Bakers Drinking Coffee</a></h3>
+						<h3><a class="post-title" href="post-details-2/">Cheerful Loving Couple Bakers Drinking Coffee</a></h3>
 						<ul class="list-inline post-meta mb-4">
-							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John Doe</a>
+							<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author/">John Doe</a>
 							</li>
 							<li class="list-inline-item">Date : March 14, 2020</li>
 							<li class="list-inline-item">Categories : <a href="#!" class="ml-1">Newyork city </a>
@@ -269,28 +267,26 @@
       </form>
    </div>
    <!-- categories -->
-   {% for post in posts %}
    <div class="widget">
       <h5 class="widget-title"><span>Categories</span></h5>
       <ul class="list-unstyled widget-list">
-         <li><a href="#!" class="d-flex">{{ post.fasl }}
-               <small class="ml-auto">{{ post.raqam }}</small></a>
+         <li><a href="#!" class="d-flex">Four seasone
+               <small class="ml-auto">(1)</small></a>
          </li>
-         <li><a href="#!" class="d-flex">{{ post.shaharlar }}
-               <small class="ml-auto">{{ post.raqamcha }}</small></a>
+         <li><a href="#!" class="d-flex">Newyork city
+               <small class="ml-auto">(2)</small></a>
          </li>
-         <li><a href="#!" class="d-flex">{{ post.rasm }}
-               <small class="ml-auto">{{ post.mening }}</small></a>
+         <li><a href="#!" class="d-flex">Photobooth
+               <small class="ml-auto">(1)</small></a>
          </li>
-         <li><a href="#!" class="d-flex">{{ post.rasm }}
-               <small class="ml-auto">{{ post.kubok }}</small></a>
+         <li><a href="#!" class="d-flex">Photography
+               <small class="ml-auto">(2)</small></a>
          </li>
-         <li><a href="#!" class="d-flex">{{ post.vidiografiya }}
-               <small class="ml-auto">{{ post.lop }}</small></a>
+         <li><a href="#!" class="d-flex">Videography
+               <small class="ml-auto">(1)</small></a>
          </li>
       </ul>
    </div>
-   {% endfor %}
    <!-- tags -->
    <div class="widget">
       <h5 class="widget-title"><span>Tags</span></h5>
@@ -317,11 +313,11 @@
       <!-- post-item -->
       <ul class="list-unstyled widget-list">
          <li class="media widget-post align-items-center">
-            <a href="post-elements.html">
-               <img loading="lazy" class="mr-3" src="{{ post.rasmcha }}">
+            <a href="post-elements/">
+               <img loading="lazy" class="mr-3" src="{% static 'images/post/post-6.jpg' %}">
             </a>
             <div class="media-body">
-               <h5 class="h6 mb-0"><a href="post-elements.html">Elements That You Can Use To Create A New Post On
+               <h5 class="h6 mb-0"><a href="post-elements/">Elements That You Can Use To Create A New Post On
                      This Template.</a></h5>
                <small>March 15, 2020</small>
             </div>
@@ -329,11 +325,11 @@
       </ul>
       <ul class="list-unstyled widget-list">
          <li class="media widget-post align-items-center">
-            <a href="post-details-1.html">
-               <img loading="lazy" class="mr-3" src="{{ post.rasmcha }}">
+            <a href="post-details-1/">
+               <img loading="lazy" class="mr-3" src="{% static 'images/post/post-1.jpg' %}">
             </a>
             <div class="media-body">
-               <h5 class="h6 mb-0"><a href="post-details-1.html">Cheerful Loving Couple Bakers Drinking Coffee</a>
+               <h5 class="h6 mb-0"><a href="post-details-1/">Cheerful Loving Couple Bakers Drinking Coffee</a>
                </h5>
                <small>March 14, 2020</small>
             </div>
@@ -341,11 +337,11 @@
       </ul>
       <ul class="list-unstyled widget-list">
          <li class="media widget-post align-items-center">
-            <a href="post-details-2.html">
-               <img loading="lazy" class="mr-3" src="{{ post.rasmcha }}">
+            <a href="post-details-2/">
+               <img loading="lazy" class="mr-3" src="{% static 'images/post/post-2.jpg' %}">
             </a>
             <div class="media-body">
-               <h5 class="h6 mb-0"><a href="post-details-2.html">Cheerful Loving Couple Bakers Drinking Coffee</a>
+               <h5 class="h6 mb-0"><a href="post-details-2/">Cheerful Loving Couple Bakers Drinking Coffee</a>
                </h5>
                <small>March 14, 2020</small>
             </div>
@@ -362,7 +358,7 @@
          <div class="row justify-content-between">
             <div class="col-md-3 mb-4">
                <a class="mb-4 d-block" href="index.html">
-                  <img class="img-fluid" width="150px" src="{{ post.rasmcha }}" alt="LogBook">
+                  <img class="img-fluid" width="150px" src="images/logo.png" alt="LogBook">
                </a>
                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
             </div>
@@ -409,11 +405,11 @@
 
 
    <!-- JS Plugins -->
-   <script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script>
-   <script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}" async></script>
-   <script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+   <script src="plugins/jQuery/jquery.min.js"></script>
+   <script src="plugins/bootstrap/bootstrap.min.js" async></script>
+   <script src="plugins/slick/slick.min.js"></script>
 
    <!-- Main Script -->
-   <script src="{% static 'js/script.js' %}"></script>
+   <script src="js/script.js"></script>
 </body>
 </html>

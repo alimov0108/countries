@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 
 <!--
@@ -19,19 +20,19 @@
    <meta name="author" content="Themefisher">
 
    <!-- plugins -->
-   <link rel="preload" href="https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWJ0bbck.woff2" style="font-display: optional;">
-   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:600%7cOpen&#43;Sans&amp;display=swap" media="screen">
+   <link rel="preload" href="{% static 'https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWJ0bbck.woff2' %}" style="font-display: optional;">
+   <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}">
+   <link rel="stylesheet" href="{% static 'https://fonts.googleapis.com/css?family=Montserrat:600%7cOpen&#43;Sans&amp;display=swap' %}" media="screen">
 
-   <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
-   <link rel="stylesheet" href="plugins/slick/slick.css">
+   <link rel="stylesheet" href="{% static 'plugins/themify-icons/themify-icons.css' %}">
+   <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
 
    <!-- Main Stylesheet -->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
    <!--Favicon-->
-   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-   <link rel="icon" href="images/favicon.png" type="image/x-icon">
+   <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+   <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
 </head>
 
 <body>
@@ -40,8 +41,8 @@
    <div class="container">
 
       <nav class="navbar navbar-expand-lg navbar-white">
-         <a class="navbar-brand" href="index.html">
-            <img class="img-fluid" width="150px" src="images/logo.png" alt="LogBook">
+         <a class="navbar-brand" href="index/">
+            <img class="img-fluid" width="150px" src="{% static 'images/logo.png' %}" alt="LogBook">
          </a>
          <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
             <i class="ti-menu"></i>
@@ -55,31 +56,31 @@
                      homepage <i class="ti-angle-down ml-1"></i>
                   </a>
                   <div class="dropdown-menu">
-                     <a class="dropdown-item" href="index-full.html">Homepage Full Width</a>
-                     <a class="dropdown-item" href="index-full-left.html">Homepage Full With Left Sidebar</a>
-                     <a class="dropdown-item" href="index-full-right.html">Homepage Full With Right Sidebar</a>
-                     <a class="dropdown-item" href="index-list.html">Homepage List Style</a>
-                     <a class="dropdown-item" href="index-list-left.html">Homepage List With Left Sidebar</a>
-                     <a class="dropdown-item" href="index-list-right.html">Homepage List With Right Sidebar</a>
+                     <a class="dropdown-item" href="index-full/">Homepage Full Width</a>
+                     <a class="dropdown-item" href="index-full-left/">Homepage Full With Left Sidebar</a>
+                     <a class="dropdown-item" href="index-full-right/">Homepage Full With Right Sidebar</a>
+                     <a class="dropdown-item" href="index-list/">Homepage List Style</a>
+                     <a class="dropdown-item" href="index-list-left/">Homepage List With Left Sidebar</a>
+                     <a class="dropdown-item" href="index-list-right/">Homepage List With Right Sidebar</a>
                   </div>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
+                  <a class="nav-link" href="about/">About</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                  <a class="nav-link" href="contact/">Contact</a>
                </li>
                <li class="nav-item dropdown">
                   <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
                      aria-expanded="false">Pages <i class="ti-angle-down ml-1"></i>
                   </a>
                   <div class="dropdown-menu">
-                     <a class="dropdown-item" href="author.html">Author</a>
-                     <a class="dropdown-item" href="post-details-1.html">Post Details 1</a>
-                     <a class="dropdown-item" href="post-details-2.html">Post Details 2</a>
-                     <a class="dropdown-item" href="post-elements.html">Post Elements</a>
-                     <a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a>
-                     <a class="dropdown-item" href="terms-conditions.html">Terms Conditions</a>
+                     <a class="dropdown-item" href="author/">Author</a>
+                     <a class="dropdown-item" href="post-details-1/">Post Details 1</a>
+                     <a class="dropdown-item" href="post-details-2/">Post Details 2</a>
+                     <a class="dropdown-item" href="post-elements/">Post Elements</a>
+                     <a class="dropdown-item" href="privacy-policy/">Privacy Policy</a>
+                     <a class="dropdown-item" href="terms-conditions/">Terms Conditions</a>
                   </div>
                </li>
             </ul>
@@ -159,8 +160,8 @@
       <div class="container">
          <div class="row justify-content-between">
             <div class="col-md-3 mb-4">
-               <a class="mb-4 d-block" href="index.html">
-                  <img class="img-fluid" width="150px" src="images/logo.png" alt="LogBook">
+               <a class="mb-4 d-block" href="index/">
+                  <img class="img-fluid" width="150px" src="{% static 'images/logo.png' %}" alt="LogBook">
                </a>
                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
             </div>
@@ -168,10 +169,10 @@
             <div class="col-lg-2 col-md-3 col-6 mb-4">
                <h6 class="mb-4">Quick Links</h6>
                <ul class="list-unstyled footer-list">
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                  <li><a href="terms-conditions.html">Terms Conditions</a></li>
+                  <li><a href="about/">About</a></li>
+                  <li><a href="contact/">Contact</a></li>
+                  <li><a href="privacy-policy/">Privacy Policy</a></li>
+                  <li><a href="terms-conditions/">Terms Conditions</a></li>
                </ul>
             </div>
 
@@ -207,11 +208,11 @@
 
 
    <!-- JS Plugins -->
-   <script src="plugins/jQuery/jquery.min.js"></script>
-   <script src="plugins/bootstrap/bootstrap.min.js" async></script>
-   <script src="plugins/slick/slick.min.js"></script>
+   <script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script>
+   <script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}" async></script>
+   <script src="{% static 'plugins/slick/slick.min.js' %}"></script>
 
    <!-- Main Script -->
-   <script src="js/script.js"></script>
+   <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
