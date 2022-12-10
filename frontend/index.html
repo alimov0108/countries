@@ -24,7 +24,7 @@
 
    <!-- plugins -->
    <link rel="preload" href="{% static 'https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWJ0bbck.woff2' %}" style="font-display: optional;">
-   <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css">
+   <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}">
    <link rel="stylesheet" href="{% static 'https://fonts.googleapis.com/css?family=Montserrat:600%7cOpen&#43;Sans&amp;display=swap' %}" media="screen">
 
    <link rel="stylesheet" href="{% static 'plugins/themify-icons/themify-icons.css' %}">
@@ -357,19 +357,19 @@
       <div class="container">
          <div class="row justify-content-between">
             <div class="col-md-3 mb-4">
-               <a class="mb-4 d-block" href="index.html">
-                  <img class="img-fluid" width="150px" src="images/logo.png" alt="LogBook">
-               </a>
+               <a class="mb-4 d-block" href="index/">
+                  <img class="img-fluid" width="150px" src="{% static 'images/logo.png' %}" alt="LogBook">
+               </a> 
                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
             </div>
 
             <div class="col-lg-2 col-md-3 col-6 mb-4">
                <h6 class="mb-4">Quick Links</h6>
                <ul class="list-unstyled footer-list">
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                  <li><a href="terms-conditions.html">Terms Conditions</a></li>
+                  <li><a href="about/">About</a></li>
+                  <li><a href="contact/">Contact</a></li>
+                  <li><a href="privacy-policy/">Privacy Policy</a></li>
+                  <li><a href="terms-conditions/">Terms Conditions</a></li>
                </ul>
             </div>
 
@@ -405,11 +405,11 @@
 
 
    <!-- JS Plugins -->
-   <script src="plugins/jQuery/jquery.min.js"></script>
-   <script src="plugins/bootstrap/bootstrap.min.js" async></script>
-   <script src="plugins/slick/slick.min.js"></script>
+   <script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script>
+   <script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}" async></script>
+   <script src="{% static 'plugins/slick/slick.min.js' %}"></script>
 
    <!-- Main Script -->
-   <script src="js/script.js"></script>
+   <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
